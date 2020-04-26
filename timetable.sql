@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 24, 2020 at 12:09 PM
+-- Generation Time: Apr 25, 2020 at 07:32 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -20,19 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `timetable`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `Admin`
---
-
-CREATE TABLE `Admin` (
-  `id` int(11) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `type` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -221,12 +208,6 @@ INSERT INTO `timetable` (`id`, `date_created`, `time_stamp`, `department`, `seme
 --
 
 --
--- Indexes for table `Admin`
---
-ALTER TABLE `Admin`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
@@ -277,12 +258,6 @@ ALTER TABLE `timetable`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `Admin`
---
-ALTER TABLE `Admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `admin`
